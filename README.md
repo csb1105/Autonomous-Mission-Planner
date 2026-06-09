@@ -1,8 +1,8 @@
-Autonomous Mission Planner - Risk-Aware Mission Planning for Unmanned Systems
+## Autonomous Mission Planner - Risk-Aware Mission Planning for Unmanned Systems
 
 A Python-based autonomy simulation framework for planning, scoring, and replanning unmanned system missions under operational constraints.
 
-Overview
+## Overview
 Autonomous Mission Planner is a mission-level autonomy simulator designed to model how unmanned systems plan, evaluate, and adapt missions in constrained operational environments.
 
 The system takes mission objectives, platform constraints, threat zones, sensor limitations, and environmental data as inputs, then generates a mission plan containing:
@@ -16,7 +16,7 @@ Human-readable mission summaries
 
 This project focuses on mission-level autonomy and operational decision support rather than vehicle flight control.
 
-Why This Project Exists
+## Why This Project Exists
 
 This repository demonstrates:
 Python software engineering
@@ -30,7 +30,9 @@ Simulation-based decision support
 
 The goal is to show how autonomy software can reason about competing mission variables and generate explainable mission plans.
 
-Repository Structure: 
+## Repository Structure
+
+```text
 autonomous-mission-planner/
 ├── README.md
 ├── requirements.txt
@@ -49,8 +51,10 @@ autonomous-mission-planner/
 │   └── run_sample_mission.py
 └── tests/
     └── test_planner.py
+```
 
-Core Mission Planning Workflow
+
+## Core Mission Planning Workflow
 Mission Objectives
         │
         ▼
@@ -80,36 +84,36 @@ Monitor Mission State
         ▼
 Replan When Necessary
 
-Key Features
-Mission Planning
+## Key Features
+## Mission Planning
 
 Generate mission plans from operational objectives and platform capabilities.
 
-Route Generation
+## Route Generation
 
 Create waypoint sequences connecting mission objectives while accounting for operational constraints.
 
-Risk Assessment
+## Risk Assessment
 
 Evaluate route exposure using threat-zone proximity and mission conditions.
 
-Constraint Validation
+## Constraint Validation
 
 Ensure mission plans remain within platform endurance, range, and sensor limitations.
 
-Task Allocation
+## Task Allocation
 
 Assign mission objectives based on priority and operational feasibility.
 
-Mission Replanning
+## Mission Replanning
 
 Recommend route adjustments when mission conditions change.
 
-Human-Machine Decision Support
+## Human-Machine Decision Support
 
 Produce explainable outputs that help operators understand mission recommendations.
 
-Example Mission Inputs
+## Example Mission Inputs
 
 The planner accepts structured mission definitions containing:
 Platform specifications
@@ -120,7 +124,7 @@ Threat zones
 Environmental conditions
 Sensor constraints
 
-Example: 
+## Example: 
 {
   "mission_id": "MISSION-001",
   "platform": {
@@ -149,7 +153,7 @@ Example:
   ]
 }
 
-Example Outputs
+## Example Outputs
 
 The planner generates mission recommendations including:
 Mission ID: MISSION-001
@@ -215,7 +219,7 @@ Replanning recommendations
 
 This supports operator oversight and trust in autonomy-enabled mission planning systems.
 
-Running the Project
+## Running the Project
 
 Install dependencies:
 pip install -r requirements.txt
@@ -226,10 +230,9 @@ python examples/run_sample_mission.py
 Run tests:
 pytest
 
-Future Enhancements
+## Future Enhancements
 
 Potential future capabilities include:
-
 Multi-platform mission planning
 Dynamic threat updates
 Weather-aware routing
