@@ -13,9 +13,10 @@ from mission_planner.models import (
 )
 from mission_planner.planner import create_mission_plan
 from mission_planner.simulator import summarize_plan
+from mission_planner.visualization import plot_mission_route
 
 
-def load_mission_file(file_path: str) -> dict:
+def load_mission_file(file_path: Path) -> dict:
     with open(file_path, "r", encoding="utf-8") as file:
         return json.load(file)
 
@@ -121,6 +122,11 @@ def main() -> None:
     print(summarize_plan(mission_plan))
     print()
     print("=" * 60)
+
+    plot_mission_route(
+        mission_plan.waypoints,
+        threat_zones,
+    )
 
 
 if __name__ == "__main__":
