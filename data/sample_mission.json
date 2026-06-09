@@ -1,0 +1,52 @@
+{
+  "mission_id": "MISSION-001",
+  "platform": {
+    "name": "UAS-Alpha",
+    "max_range_km": 120,
+    "endurance_minutes": 90,
+    "sensor_range_km": 15
+  },
+  "start": {
+    "lat": 34.000,
+    "lon": -117.000
+  },
+  "recovery": {
+    "lat": 34.100,
+    "lon": -117.100
+  },
+  "objectives": [
+    {
+      "id": "OBJ-1",
+      "type": "surveillance",
+      "priority": 1,
+      "lat": 34.050,
+      "lon": -117.040
+    },
+    {
+      "id": "OBJ-2",
+      "type": "reconnaissance",
+      "priority": 2,
+      "lat": 34.080,
+      "lon": -117.020
+    }
+  ],
+  "threat_zones": [
+    {
+      "id": "THREAT-1",
+      "lat": 34.070,
+      "lon": -117.060,
+      "radius_km": 8,
+      "severity": 0.8
+    },
+    {
+      "id": "THREAT-2",
+      "lat": 34.090,
+      "lon": -117.030,
+      "radius_km": 5,
+      "severity": 0.6
+    }
+  ],
+  "environment": {
+    "risk_factor": 0.15
+  }
+}
