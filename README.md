@@ -86,6 +86,9 @@ Monitor Mission State
         v
 Replan When Necessary
 ```
+## Example Mission Visualization
+
+![Mission Visualization](docs/images/Mission_visualization.png)
 
 ## Key Features
 ## Mission Planning
