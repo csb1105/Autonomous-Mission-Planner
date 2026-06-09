@@ -179,38 +179,49 @@ None
 Replanning Required:
 FALSE
 
-Module Responsibilities
-config.py
+## Module Responsibilities
+
+### config.py
 
 Stores planner configuration values, thresholds, and scoring weights.
 
-models.py
+### models.py
 
 Defines mission data structures and domain models.
 
-routing.py
+### routing.py
 
 Generates routes and waypoint sequences.
 
-risk.py
+### risk.py
 
 Calculates route and mission risk scores.
 
-planner.py
+### planner.py
 
 Coordinates mission planning and decision logic.
 
-simulator.py
+### simulator.py
 
 Runs mission execution simulations and replanning scenarios.
 
-visualization.py
+### visualization.py
 
 Provides mission visualization and route plotting.
 
-Human-Machine Teaming
+## Human-Machine Teaming
 
 Mission recommendations are designed to be explainable.
+
+Instead of returning only a route, the planner provides:
+
+- Route justification
+- Risk assessment
+- Objective prioritization
+- Constraint validation results
+- Replanning recommendations
+
+This supports operator oversight and trust in autonomy-enabled mission planning systems.
 
 Instead of returning a route alone, the planner provides:
 
@@ -225,28 +236,39 @@ This supports operator oversight and trust in autonomy-enabled mission planning 
 ## Running the Project
 
 Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
 Run the sample mission:
+
+```bash
 python examples/run_sample_mission.py
+```
 
 Run tests:
+
+```bash
 pytest
+```
 
 ## Future Enhancements
 
 Potential future capabilities include:
-Multi-platform mission planning
-Dynamic threat updates
-Weather-aware routing
-Terrain-aware planning
-Sensor coverage optimization
-Monte Carlo mission simulation
-Swarm task allocation
-Mission replay and analytics
-Geospatial data integration
-Reinforcement learning-based route selection
-Disclaimer
+
+- Multi-platform mission planning
+- Dynamic threat updates
+- Weather-aware routing
+- Terrain-aware planning
+- Sensor coverage optimization
+- Monte Carlo mission simulation
+- Swarm task allocation
+- Mission replay and analytics
+- Geospatial data integration
+- Reinforcement learning-based route selection
+
+## Disclaimer
 
 This repository is a mission-planning simulation framework intended for educational, research, and portfolio purposes.
 
