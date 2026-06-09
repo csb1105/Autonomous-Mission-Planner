@@ -55,34 +55,37 @@ autonomous-mission-planner/
 
 
 ## Core Mission Planning Workflow
+
+```text
 Mission Objectives
-        │
-        ▼
+        |
+        v
 Load Platform Constraints
-        │
-        ▼
+        |
+        v
 Load Threat Zones
-        │
-        ▼
+        |
+        v
 Generate Candidate Routes
-        │
-        ▼
+        |
+        v
 Evaluate Mission Risk
-        │
-        ▼
+        |
+        v
 Allocate Tasks
-        │
-        ▼
+        |
+        v
 Validate Constraints
-        │
-        ▼
+        |
+        v
 Select Mission Plan
-        │
-        ▼
+        |
+        v
 Monitor Mission State
-        │
-        ▼
+        |
+        v
 Replan When Necessary
+```
 
 ## Key Features
 ## Mission Planning
